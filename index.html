@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shaik Haroon Rasheed — Electronics & AI Engineer</title>
+<meta name="description" content="Shaik Haroon Rasheed — ECE undergraduate building at the intersection of Electronics, AI, and Software. Creator of HealSphear AI, an AI-powered pet healthcare platform." />
+<meta name="keywords" content="Shaik Haroon Rasheed, ECE Engineer, AI Developer, Electronics, HealSphear AI, Full Stack Developer, Portfolio" />
+<meta name="author" content="Shaik Haroon Rasheed" />
+<meta name="theme-color" content="#060a09" />
+<link rel="canonical" href="https://shaikharoonrasheed.dev/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Shaik Haroon Rasheed — Electronics & AI Engineer" />
+<meta property="og:description" content="ECE undergraduate building at the intersection of Electronics, AI, and Software. Creator of HealSphear AI." />
+<meta property="og:url" content="https://shaikharoonrasheed.dev/" />
+<meta property="og:image" content="https://shaikharoonrasheed.dev/og-image.png" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Shaik Haroon Rasheed — Electronics & AI Engineer" />
+<meta name="twitter:description" content="ECE undergraduate building at the intersection of Electronics, AI, and Software." />
+<meta name="twitter:image" content="https://shaikharoonrasheed.dev/og-image.png" />
+
+<!-- Icons / manifest -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2310b981'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%23060a09'/%3E%3Ctext x='50' y='66' font-size='46' font-family='Arial' font-weight='700' fill='url(%23g)' text-anchor='middle'%3EHR%3C/text%3E%3C/svg%3E" />
+<link rel="manifest" href="manifest.json" />
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Shaik Haroon Rasheed",
+  "jobTitle": "Electronics & Communication Engineering Student / AI Developer",
+  "description": "ECE undergraduate building AI, software, and electronics products. Creator of HealSphear AI.",
+  "address": { "@type": "PostalAddress", "addressRegion": "Andhra Pradesh", "addressCountry": "India" },
+  "sameAs": []
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+<div class="mouse-glow" id="mouseGlow"></div>
+
+<!-- ================= NAV ================= -->
+<header id="siteHeader">
+  <nav class="wrap">
+    <a href="#hero" class="logo">Haroon<span class="dot">.</span>dev</a>
+    <div class="nav-primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary" style="padding:11px 20px;">Let's Talk</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- full menu overlay: every requested nav destination lives here -->
+<div id="overlay-menu">
+  <div class="overlay-grid">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#techstack">Tech Stack</a>
+    <a href="#roadmap">Timeline</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="overlay-foot">
+    <!-- EDIT: your real links -->
+    <a href="#" target="_blank" rel="noopener">GitHub</a>
+    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:haroon@example.com">Email</a>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<section id="hero">
+  <canvas id="particle-canvas"></canvas>
+  <div class="hero-inner wrap">
+
+    <!-- floating tech icons — hidden on mobile -->
+    <div class="float-icon" style="top:14%; left:6%; animation-delay:0s;"><img src="https://cdn.simpleicons.org/react/34d399" alt="" /></div>
+    <div class="float-icon" style="top:24%; right:10%; animation-delay:1.2s;"><img src="https://cdn.simpleicons.org/python/22d3ee" alt="" /></div>
+    <div class="float-icon" style="bottom:30%; left:12%; animation-delay:2.4s;"><img src="https://cdn.simpleicons.org/cplusplus/34d399" alt="" /></div>
+    <div class="float-icon" style="bottom:16%; right:16%; animation-delay:0.7s;"><img src="https://cdn.simpleicons.org/typescript/22d3ee" alt="" /></div>
+    <div class="float-icon" style="top:8%; right:32%; animation-delay:1.8s;"><img src="https://cdn.simpleicons.org/arduino/34d399" alt="" /></div>
+
+    <div class="hero-kicker"><span class="pulse-dot"></span>Available for internships &amp; collaborations</div>
+
+    <h1 class="hero-title">
+      Building at the edge of<br>
+      <span class="grad-text">Electronics, AI</span> &amp;<br>
+      Software Engineering.
+    </h1>
+
+    <div class="type-role" id="typeRole"></div>
+
+    <!-- EDIT: your pitch -->
+    <p class="hero-sub">
+      I'm Shaik Haroon Rasheed — an 18-year-old ECE undergraduate from Andhra Pradesh,
+      India, building AI-powered products and exploring how hardware and software
+      meet. Currently building <strong style="color:var(--white)">HealSphear AI</strong>,
+      an AI healthcare platform for pets.
+    </p>
+
+    <div class="hero-actions btn-row">
+      <!-- EDIT: replace assets/resume/resume.pdf with your real file -->
+      <a href="assets/resume/resume.pdf" class="btn btn-primary magnetic" download>Download Résumé</a>
+      <a href="#projects" class="btn btn-ghost magnetic">View Projects</a>
+      <a href="#contact" class="btn btn-ghost magnetic">Contact Me</a>
+    </div>
+
+    <div class="hero-stats reveal-stagger" id="heroStats">
+      <div><b>2nd</b><span>Year, B.Tech ECE</span></div>
+      <div><b>18</b><span>Years Old</span></div>
+      <div><b>1</b><span>Flagship Product</span></div>
+      <div><b>15+</b><span>Tools &amp; Technologies</span></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span class="line"></span>Scroll to explore</div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="divider">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">01 · About</div>
+      <h2>ECE by degree.<br>Builder by nature.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <!-- EDIT: personalize freely -->
+        <p>
+          I chose <strong>Electronics and Communication Engineering</strong> because I wanted
+          to understand technology from the ground up — from the transistor to the interface.
+          But somewhere in my first year, writing my first lines of JavaScript, I realized
+          software was the fastest way to turn an idea into something real. So I started
+          learning both, at the same time, on purpose.
+        </p>
+        <p>
+          <strong>Artificial Intelligence</strong> fascinates me because it sits exactly where
+          my two worlds meet — it needs the rigor of electronics thinking and the creativity
+          of software design. I don't see myself as "an ECE student who also codes." I see
+          myself as an engineer who refuses to pick a lane.
+        </p>
+        <p>
+          My long-term goal is simple to say and hard to do: build products, at the
+          intersection of hardware and AI, that positively impact millions of people —
+          starting with <strong>HealSphear AI</strong>, in pet healthcare.
+        </p>
+        <div class="interest-cloud">
+          <span>Artificial Intelligence</span><span>Machine Learning</span><span>Web Development</span>
+          <span>Embedded Systems</span><span>VLSI</span><span>Chip Design</span><span>IoT</span>
+          <span>Robotics</span><span>UI/UX</span><span>Cloud</span><span>Open Source</span>
+          <span>Startups</span><span>Hackathons</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="profile-card glass">
+          <div class="profile-row"><span>Name</span><span>Shaik Haroon Rasheed</span></div>
+          <div class="profile-row"><span>Age</span><span>18</span></div>
+          <div class="profile-row"><span>Degree</span><span>B.Tech, ECE</span></div>
+          <div class="profile-row"><span>Year</span><span>2nd Year</span></div>
+          <div class="profile-row"><span>Location</span><span>Andhra Pradesh, India</span></div>
+          <div class="profile-row"><span>Focus</span><span>AI + Electronics + Software</span></div>
+          <div class="profile-row"><span>Flagship Project</span><span>HealSphear AI</span></div>
+          <div class="profile-row"><span>Status</span><span>Open to internships</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="divider">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">02 · Skills</div>
+      <h2>What I build with.</h2>
+      <p>A working stack across software, AI, and electronics — some mastered, some deliberately still in progress.</p>
+    </div>
+    <div class="skills-grid reveal-stagger" id="skillsGrid">
+      <div class="skill-card glass">
+        <h3>Programming</h3>
+        <div class="skill-item"><div class="top"><span>JavaScript / TypeScript</span><span>82%</span></div><div class="skill-track"><div class="skill-fill" style="--level:82%"></div></div></div>
+        <div class="skill-item"><div class="top"><span>Python</span><span>85%</span></div><div class="skill-track"><div class="skill-fill" style="--level:85%"></div></div></div>
+        <div class="skill-item"><div class="top"><span>C / C++</span><span>78%</span></div><div class="skill-track"><div class="skill-fill" style="--level:78%"></div></div></div>
+        <div class="skill-item"><div class="top"><span>HTML / CSS</span><span>90%</span></div><div class="skill-track"><div class="skill-fill" style="--level:90%"></div></div></div>
+      </div>
+      <div class="skill-card glass">
+        <h3>Software &amp; Web</h3>
+        <div class="skill-item"><div class="top"><span>React</span><span>76%</span></div><div class="skill-track"><div class="skill-fill" style="--level:76%"></div></div></div>
+        <div class="skill-item"><div class="top"><span>Git &amp; GitHub</span><span>84%</span></div><div class="skill-track"><div class="skill-fill" style="--level:84%"></div></div></div>
+        <div class="skill-item"><div class="top"><span>Responsive / UI-UX Design</span><span>75%</span></div><div class="skill-track"><div class="skill-fill" style="--level:75%"></div></div></div>
+        <div class="skill-item"><div class="top"><span>Problem Solving</span><span>88%</span></div><div class="skill-track"><div class="skill-fill" style="--level:88%"></div></div></div>
+      </div>
+      <div class="skill-card glass">
+        <h3>AI &amp; Data</h3>
+        <div class="skill-item"><div class="top"><span>Applied AI / ML</span><span>65%</span></div><div class="skill-track"><div class="skill-fill" style="--level:65%"></div></div></div>
+        <div class="skill-item"><div class="top"><span>Prompt &amp; AI Product Design</span><span>72%</span></div><div class="skill-track"><div class="skill-fill" style="--level:72%"></div></div></div>
+      </div>
+      <div class="skill-card glass">
+        <h3>Electronics<span class="badge-learning">Core Degree</span></h3>
+        <div class="skill-item"><div class="top"><span>Embedded Systems</span><span>60%</span></div><div class="skill-track"><div class="skill-fill" style="--level:60%"></div></div></div>
+        <div class="skill-item"><div class="top"><span>VLSI<span class="badge-learning">Learning</span></span><span>35%</span></div><div class="skill-track"><div class="skill-fill" style="--level:35%"></div></div></div>
+        <div class="skill-item"><div class="top"><span>Chip Design<span class="badge-learning">Learning</span></span><span>28%</span></div><div class="skill-track"><div class="skill-fill" style="--level:28%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TECH STACK ================= -->
+<section id="techstack" class="divider tight">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">03 · Tech Stack</div>
+      <h2>Daily drivers.</h2>
+    </div>
+    <div class="stack-grid reveal-stagger">
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/html5/34d399" alt="HTML5" /><span>HTML5</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/css3/22d3ee" alt="CSS3" /><span>CSS3</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/javascript/34d399" alt="JavaScript" /><span>JavaScript</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/typescript/22d3ee" alt="TypeScript" /><span>TypeScript</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/react/34d399" alt="React" /><span>React</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/nodedotjs/22d3ee" alt="Node.js" /><span>Node.js</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/python/34d399" alt="Python" /><span>Python</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/cplusplus/22d3ee" alt="C++" /><span>C++</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/c/34d399" alt="C" /><span>C</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/git/22d3ee" alt="Git" /><span>Git</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/github/34d399" alt="GitHub" /><span>GitHub</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/visualstudiocode/22d3ee" alt="VS Code" /><span>VS Code</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/figma/34d399" alt="Figma" /><span>Figma</span></div>
+      <div class="stack-item glass"><img src="https://cdn.simpleicons.org/arduino/22d3ee" alt="Arduino" /><span>Arduino</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="divider">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">04 · Flagship Project</div>
+      <h2>HealSphear AI</h2>
+      <p>AI-powered pet healthcare — helping owners understand, monitor, and act on their pet's health.</p>
+    </div>
+
+    <div class="flagship glass reveal">
+      <div class="flagship-top">
+        <div>
+          <span class="flagship-tag">In Active Development</span>
+          <h3>An AI health companion for pets.</h3>
+        </div>
+        <div class="btn-row">
+          <!-- EDIT: real links -->
+          <a href="#" class="btn btn-primary magnetic">Live Demo</a>
+          <a href="#" class="btn btn-ghost magnetic">GitHub ↗</a>
+        </div>
+      </div>
+
+      <p class="lead">
+        HealSphear AI is an AI-powered platform built to help pet owners monitor and care
+        for their animals with the same seriousness we bring to human healthcare. It combines
+        an AI health assistant, symptom and vital tracking, and a hospital-finder into one
+        experience — with the long-term goal of becoming a complete intelligent healthcare
+        ecosystem for pets.
+      </p>
+
+      <div class="flagship-features">
+        <div class="feature-pill"><b>AI Health Assistant</b><span>Conversational triage that helps owners understand symptoms.</span></div>
+        <div class="feature-pill"><b>Health Monitoring</b><span>Tracks vitals and habits over time to flag anomalies early.</span></div>
+        <div class="feature-pill"><b>Hospital Finder</b><span>Locates nearby vet hospitals when urgent care is needed.</span></div>
+        <div class="feature-pill"><b>Health Tracking</b><span>A running record of visits, vaccinations, and conditions.</span></div>
+      </div>
+
+      <div class="flagship-meta">
+        <div>
+          <h4>Technologies</h4>
+          <div class="tag-row">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Python</span>
+            <span class="tag">AI / ML APIs</span><span class="tag">MongoDB</span><span class="tag">REST API</span>
+          </div>
+        </div>
+        <div>
+          <h4>Challenges</h4>
+          <p>Designing an AI assistant that's genuinely useful without overstepping into
+          medical diagnosis, and building a data model flexible enough for dozens of
+          species and breeds.</p>
+        </div>
+      </div>
+
+      <div class="flagship-meta">
+        <div>
+          <h4>Future Scope</h4>
+          <p>Expanding into a full intelligent healthcare ecosystem for pets — wearable
+          integration, vet-verified AI triage, and a connected network of clinics.</p>
+        </div>
+        <div>
+          <h4>Overview</h4>
+          <p>Started as a personal project to solve a real gap: pet owners rarely have
+          fast, trustworthy guidance when something feels wrong with their animal.</p>
+        </div>
+      </div>
+
+      <div class="gallery-strip">
+        <div class="gallery-slot">EDIT: add product screenshot</div>
+        <div class="gallery-slot">EDIT: add dashboard preview</div>
+        <div class="gallery-slot">EDIT: add mobile view</div>
+      </div>
+    </div>
+
+    <!-- more projects — duplicate .project-card to add new ones without redesigning -->
+    <div class="projects-grid">
+      <div class="project-card glass reveal">
+        <div class="num">/ 02</div>
+        <h4>Your Next Project</h4>
+        <p>Swap this card's title, description, and tags for your next build.</p>
+        <div class="tag-row"><span class="tag">Stack</span><span class="tag">Here</span></div>
+      </div>
+      <div class="project-card placeholder glass reveal">
+        <div style="font-family:var(--mono); font-size:1.4rem; color:var(--emerald-2);">+</div>
+        <span>Reserved for your next project</span>
+      </div>
+      <div class="project-card placeholder glass reveal">
+        <div style="font-family:var(--mono); font-size:1.4rem; color:var(--cyan);">+</div>
+        <span>Reserved for your next project</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="divider">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">05 · Experience</div>
+      <h2>Hands-on so far.</h2>
+      <p>As a second-year student, my "experience" is self-driven — projects, exploration, and showing up consistently.</p>
+    </div>
+    <div class="timeline reveal">
+      <!-- EDIT: add real entries as they happen -->
+      <div class="tl-item">
+        <div class="tl-date">2025 — Present</div>
+        <h3>Founder &amp; Builder, HealSphear AI</h3>
+        <div class="tl-role">Independent Project</div>
+        <p>Designing and building an AI-powered pet healthcare platform end-to-end —
+        product thinking, architecture, and interface.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">2024 — Present</div>
+        <h3>Self-Directed Software &amp; AI Learning</h3>
+        <div class="tl-role">Independent Study</div>
+        <p>Structured daily practice across JavaScript, TypeScript, Python, and applied
+        AI — treating it with the same discipline as coursework.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">2023 — Present</div>
+        <h3>Open-Source &amp; Technical Exploration</h3>
+        <div class="tl-role">Community Learning</div>
+        <p>Reading real-world codebases, contributing where I can, and exploring
+        embedded systems and IoT projects outside the syllabus.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">2022 — Present</div>
+        <h3>Hackathons &amp; College Tech Activities</h3>
+        <div class="tl-role">B.Tech, ECE</div>
+        <p>Participating in hackathons and technical events to pressure-test ideas
+        against deadlines and real feedback.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="divider">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">06 · Education</div>
+      <h2>Academic timeline.</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-date">2024 — 2028 (Expected)</div>
+        <h3>B.Tech — Electronics &amp; Communication Engineering</h3>
+        <div class="tl-role">Currently in 2nd Year · Andhra Pradesh, India</div>
+        <p>Core coursework in electronics, signals, and communication systems, paired
+        with self-taught software engineering and AI on the side.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Prior</div>
+        <h3>Secondary &amp; Higher Secondary Education</h3>
+        <div class="tl-role">Andhra Pradesh, India</div>
+        <!-- EDIT: add your school name + years -->
+        <p>Foundation years where curiosity about how things work first turned into
+        a habit of building.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section id="achievements" class="divider tight">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">07 · Achievements</div>
+      <h2>Milestones in progress.</h2>
+      <p>Structured and ready — add real wins here as they happen.</p>
+    </div>
+    <div class="card-grid reveal-stagger">
+      <div class="ph-card glass"><div class="ico">🏆</div><b>Hackathon Result</b><span>Add your placement here</span></div>
+      <div class="ph-card glass"><div class="ico">⚡</div><b>Competition</b><span>Add your achievement here</span></div>
+      <div class="ph-card glass"><div class="ico">🔬</div><b>Research</b><span>Add publication / project here</span></div>
+      <div class="ph-card glass"><div class="ico">🎤</div><b>Technical Event</b><span>Add talk / event here</span></div>
+      <div class="ph-card glass"><div class="ico">🥇</div><b>Award</b><span>Add recognition here</span></div>
+      <div class="ph-card glass"><div class="ico">+</div><b>Add New</b><span>Duplicate this card</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications" class="divider tight">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">08 · Certifications</div>
+      <h2>Verified learning.</h2>
+      <p>Slots ready for certificates — each links out to the issuing credential.</p>
+    </div>
+    <div class="card-grid reveal-stagger">
+      <div class="ph-card glass"><div class="ico">📜</div><b>Certificate Name</b><span>Issuer · Year</span></div>
+      <div class="ph-card glass"><div class="ico">📜</div><b>Certificate Name</b><span>Issuer · Year</span></div>
+      <div class="ph-card glass"><div class="ico">+</div><b>Add New</b><span>Duplicate this card</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ROADMAP / FUTURE GOALS ================= -->
+<section id="roadmap" class="divider">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">09 · Where I'm Headed</div>
+      <h2>Future goals.</h2>
+    </div>
+    <div class="roadmap-grid reveal-stagger">
+      <div class="roadmap-card glass"><div class="n">01</div><h4>AI-Powered Electronics Engineer</h4><p>Fuse embedded systems and AI into a single, deployable skill set.</p></div>
+      <div class="roadmap-card glass"><div class="n">02</div><h4>Build Startups</h4><p>Turn HealSphear AI and future ideas into real, sustainable products.</p></div>
+      <div class="roadmap-card glass"><div class="n">03</div><h4>Healthcare Technology</h4><p>Keep contributing to tools that make care more accessible.</p></div>
+      <div class="roadmap-card glass"><div class="n">04</div><h4>Advanced Chip Design</h4><p>Go deep on VLSI and chip design as a long-term specialization.</p></div>
+      <div class="roadmap-card glass"><div class="n">05</div><h4>Innovative Software Products</h4><p>Ship software that's genuinely useful, not just technically impressive.</p></div>
+      <div class="roadmap-card glass"><div class="n">06</div><h4>Technology That Improves Lives</h4><p>Measure success by real-world impact, not just metrics.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="divider tight">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">10 · Gallery</div>
+      <h2>Visual snapshots.</h2>
+      <p>Reserved space for screenshots, event photos, and product shots.</p>
+    </div>
+    <div class="gallery-strip reveal-stagger" style="grid-template-columns:repeat(4,1fr);">
+      <div class="gallery-slot">EDIT: image 1</div>
+      <div class="gallery-slot">EDIT: image 2</div>
+      <div class="gallery-slot">EDIT: image 3</div>
+      <div class="gallery-slot">EDIT: image 4</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="divider">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">11 · Contact</div>
+      <h2>Let's build something.</h2>
+      <p>Open to internships, collaborations, and anyone who wants to talk AI, electronics, or startups.</p>
+    </div>
+    <div class="contact-grid">
+      <form class="reveal" id="contactForm">
+        <div class="form-row"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" required /></div>
+        <div class="form-row"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" required /></div>
+        <div class="form-row"><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" required></textarea></div>
+        <button type="submit" class="btn btn-primary magnetic">Send Message</button>
+      </form>
+      <div class="reveal">
+        <div class="contact-links">
+          <!-- EDIT: real links -->
+          <a class="contact-link glass" href="#" target="_blank" rel="noopener"><span class="ic">GH</span><div><b>GitHub</b><span>github.com/haroonrasheed</span></div></a>
+          <a class="contact-link glass" href="#" target="_blank" rel="noopener"><span class="ic">IN</span><div><b>LinkedIn</b><span>linkedin.com/in/haroonrasheed</span></div></a>
+          <a class="contact-link glass" href="mailto:haroon@example.com"><span class="ic">@</span><div><b>Email</b><span>haroon@example.com</span></div></a>
+          <a class="contact-link glass" href="#"><span class="ic">📍</span><div><b>Location</b><span>Andhra Pradesh, India</span></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>Designed &amp; Developed by <strong style="color:var(--white);">Shaik Haroon Rasheed</strong> · © <span id="year"></span></p>
+    <div class="footer-social">
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:haroon@example.com">Email</a>
+    </div>
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+  </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
