@@ -1,0 +1,16 @@
+{
+  "name": "Shaik Haroon Rasheed — Portfolio",
+  "short_name": "Haroon Rasheed",
+  "description": "ECE undergraduate building AI, software, and electronics products. Creator of HealSphear AI.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060a09",
+  "theme_color": "#060a09",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
